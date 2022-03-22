@@ -45,7 +45,10 @@
 					/>
 				</figure>
 				<div class="schedule-form">
-					<p>Schedule your vaccinations</p>
+					<div>
+						<img src="/img/icons/clock-icon.png" alt="clock icon" />
+						<p>Schedule your vaccinations</p>
+					</div>
 					<form class="schedule-form__inputs">
 						<label for="location">
 							<img
@@ -53,7 +56,13 @@
 								alt="location icon"
 							/>
 							<span>Location</span>
-							<input type="text" id="location" />
+							<input
+								type="text"
+								id="location"
+								name="location"
+								placeholder="Jakarta Utara"
+								required
+							/>
 						</label>
 						<label for="date-vaccine">
 							<img
@@ -61,7 +70,13 @@
 								alt="calendar icon"
 							/>
 							<span>Date</span>
-							<input type="date" id="date-vaccine" />
+							<input
+								type="date"
+								id="date-vaccine"
+								min="2022-01-01"
+								value="2022-01-01"
+								required
+							/>
 						</label>
 						<label for="vaccine-type">
 							<img
@@ -69,7 +84,12 @@
 								alt=" vaccine-icon"
 							/>
 							<span>Vaccine Type</span>
-							<input type="text" id="vaccine-type" />
+							<select name="vaccine-type" id="vaccine-type">
+								<option value="Moderna">Moderna</option>
+								<option value="Astra">AstraZeneca</option>
+								<option value="Pfizer">Pfizer</option>
+								<option value="Pfizer">Sinovac</option>
+							</select>
 						</label>
 						<input type="submit" id="submit-form" />
 					</form>

@@ -166,7 +166,20 @@ header {
 	position: absolute;
 	bottom: 3rem;
 	left: 13rem;
-	width: 95rem;
+	width: 98rem;
+}
+
+.schedule-form div > img {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-right: 1rem;
+	box-shadow: 0 10px 25px -5px #405197a8;
+}
+
+.schedule-form div {
+	color: var(--title-color);
+	font-weight: 600;
+	display: flex;
 }
 
 .schedule-form__inputs {
@@ -177,13 +190,13 @@ header {
 	display: flex;
 	justify-content: space-between;
 	height: 14rem;
-	padding: 0 5rem;
+	padding: 0 4rem;
 }
 
 .schedule-form__inputs label {
 	display: flex;
 	flex-wrap: wrap;
-	width: 18rem;
+	width: 23rem;
 	font-size: 1.8rem;
 	font-weight: 500;
 }
@@ -195,11 +208,30 @@ header {
 	margin-bottom: 1rem;
 }
 
-.schedule-form__inputs input {
+.schedule-form__inputs input,
+#vaccine-type {
 	margin-left: 3.5rem;
-	width: 15rem;
-	background-color: rgba(255, 255, 255, 0.95);
+	width: 19rem;
+	background-color: rgba(255, 255, 255, 0);
 	border: 0;
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--title-color);
+}
+
+.schedule-form__inputs input:focus-visible,
+#vaccine-type:focus-visible {
+	outline: 0;
+}
+
+.schedule-form__inputs input::placeholder {
+	color: var(--title-color);
+}
+
+#submit-form {
+	margin: 0;
+	height: 4.5rem;
+	font-size: 1.6rem;
 }
 
 .brands {
